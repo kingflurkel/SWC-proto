@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/ac-button/ac-button.html">
+
+<dom-module id="SWC-account">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <div>
+      <ac-button txtbtn txtcolor="red" bg="btncolor" on-tap="togglesendcoins" class="sender">Log on</ac-button>
+      <ac-button txtbtn txtcolor="red" bg="btncolor" on-tap="togglesendcoins" class="sender">Register</ac-button>
+
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'SWC-account',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'SWC-account',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

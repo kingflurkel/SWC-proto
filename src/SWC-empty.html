@@ -1,24 +1,23 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-
-<dom-module id="SWC-app">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="SWC-empty">
   <template>
     <style>
       :host {
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <h1>{{prop1}}</h1>
   </template>
 
   <script>
     Polymer({
 
-      is: 'SWC-app',
+      is: 'SWC-empty',
 
       properties: {
         prop1: {
           type: String,
-          value: 'SWC-app',
+          value: 'SWC-empty',
         },
       },
 
